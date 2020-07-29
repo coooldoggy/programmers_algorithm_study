@@ -7,11 +7,11 @@ import java.util.Arrays;
 class Solution {
     public boolean solution(String[] phone_book) {
         boolean answer = true;
-        Arrays.sort(phone_book);
+        Arrays.sort(phone_book); // 정렬을 한다.
         for(var i=0; i<phone_book.length-1; i++){
-            if(phone_book[i].indexOf(phone_book[i+1]) == 0 || phone_book[i+1].indexOf(phone_book[i]) == 0){
-                answer = false;
-                return false;
+            // 정렬을 했기 때문에 인접한 것만 비교 앞 원소가 뒤 원소의 접두사인지 
+            if(phone_book[i+1].indexOf(phone_book[i]) == 0){ 
+                return false; // 반복문 마치고 값반환
             }
         }
         return answer;
