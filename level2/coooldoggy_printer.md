@@ -1,5 +1,7 @@
 https://programmers.co.kr/learn/courses/30/lessons/42587
 
+우선순위 큐 사용 https://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html
+
 ```
 import java.util.Collections;
 import java.util.PriorityQueue;
