@@ -14,12 +14,11 @@ n	return
 ```
 class Solution {
     fun solution(n: Long): Long {
-           var resultArr = n.toString().toCharArray().apply {
-        sortDescending()
-    }.joinToString("")
+       var resultArr = n.toString().toCharArray().apply {
+            sortDescending()
+        }.joinToString("")
 
-
-    return resultArr.toLong()
+         return resultArr.toLong()
     }
 }
 ```
